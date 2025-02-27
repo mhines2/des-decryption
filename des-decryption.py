@@ -173,7 +173,7 @@ def main():
     deciphered_text = ''.join(chr(int(final_permutation[i:i+8], 2)) for i in range(0, len(final_permutation), 8))
     print(deciphered_text)
 
-    # Perform DES Decryption with Cipher Library
+    # Perform DES Decryption with Cipher Library (to verify)
     plaintext = des_decrypt(encrypted_text, key)
     print("\nDecrypted Text using Cipher Library:", plaintext)
 
